@@ -1,8 +1,8 @@
-import { Slider } from "react-slick";
+import { Slider as Sliderr } from "react-slick";
 
 function Slider() {
   return (
-    <Slider>
+    <Sliderr>
       <section
         id="slider"
         className="slider-element swiper_wrapper min-vh-100"
@@ -100,7 +100,7 @@ function Slider() {
           </div>
         </div>
       </section>
-    </Slider>
+    </Sliderr>
   );
 }
 
