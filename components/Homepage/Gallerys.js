@@ -1,7 +1,4 @@
 import Gallery from './Gallery'
-
-
-
 function Gallerys() {
 
     const gallerys = [
@@ -67,34 +64,33 @@ function Gallerys() {
           },
     
       ]
-    return (
+      return (
         <>
+          <div>
+            <div className="section bg-transparent border-top mb-0">
+              <div className="container">
+                <div className="d-flex justify-content-between align-items-center">
+                  <div className="heading-block border-bottom-0 mb-0" style={{maxWidth: 700}}>
+                    <div className="fancy-title title-border mb-3"><h5 className="font-weight-normal color font-body text-uppercase ls1">Beautiful Captured</h5></div>
+                    <h2 className="font-weight-bold mb-2 nott" style={{fontSize: 42, letterSpacing: '-1px'}}>Our <span>Yoga</span> Gallery.</h2>
+                    <p className="lead mb-0">Energistically syndicate team building synergy after efficient human capital. Assertively underwhelm sticky solutions.</p>
+                  </div>
+                  <img src="demos/yoga/images/yoga-2.svg" alt="Yoga Image" className="d-none d-sm-flex" width={300} />
+                </div>
+              </div>
+            </div>
+            <div className="section p-0 m-0">
+              <div className="masonry-thumbs grid-container grid-2 grid-sm-3 grid-md-4" data-lightbox="gallery">
+                
+                {
+                    gallerys.map((gallery) => {
+                      return <Gallery gallery={gallery} key={gallery.id} />
+                    })
+                  }
+              </div>
+            </div>
 
-<div>
-  <div className="section bg-transparent border-top mb-0">
-    <div className="container">
-      <div className="d-flex justify-content-between align-items-center">
-        <div className="heading-block border-bottom-0 mb-0" style={{maxWidth: 700}}>
-          <div className="fancy-title title-border mb-3"><h5 className="font-weight-normal color font-body text-uppercase ls1">Beautiful Captured</h5></div>
-          <h2 className="font-weight-bold mb-2 nott" style={{fontSize: 42, letterSpacing: '-1px'}}>Our <span>Yoga</span> Gallery.</h2>
-          <p className="lead mb-0">Energistically syndicate team building synergy after efficient human capital. Assertively underwhelm sticky solutions.</p>
-        </div>
-        <img src="demos/yoga/images/yoga-2.svg" alt="Yoga Image" className="d-none d-sm-flex" width={300} />
-      </div>
-    </div>
-  </div>
-  <div className="section p-0 m-0">
-    <div className="masonry-thumbs grid-container grid-2 grid-sm-3 grid-md-4" data-lightbox="gallery">
-      
-      {
-          gallerys.map((gallery) => {
-            return <Gallery gallery={gallery} key={gallery.id} />
-          })
-        }
-    </div>
-  </div>
-
-</div>
+          </div>
 
 
         </>

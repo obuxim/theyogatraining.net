@@ -3,7 +3,7 @@ import React from 'react'
 function BlogCard() {
     return (
         <>
-          <div className="section section-price bg-transparent">
+        <div className="section section-price bg-transparent">
         <div className="container">
           <div className="d-flex justify-content-between align-items-center bottommargin-lg">
             <div className="heading-block border-bottom-0 mb-0" style={{maxWidth: '700px'}}>
