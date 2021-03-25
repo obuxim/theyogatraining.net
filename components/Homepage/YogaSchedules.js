@@ -1,13 +1,12 @@
 import SchedulesDay from './SchedulesDay'
 import Link from 'next/link'
-import {useState} from 'react'
+import { useState } from 'react'
 
 
 function YogaSchedules() {
 
   
-  const [active, setActive]=useState(0)
-  
+  const [active, setActive] = useState(0);
   
   const days = [
     {
@@ -129,11 +128,12 @@ function YogaSchedules() {
              
 
                   { days.map((day , index)=>{
-              return (<Link  href={day.link} onClick ={(e) =>{
-                setActive(index)
-              }} 
-               ><a id={day.id} data-toggle="pill" role="tab" aria-controls={day.link}  aria-selected="true" className= {`nav-link ${index===active && "active"}`}>{day.date}</a></Link>)
-            })}
+                  return (<Link  key={index+1} href={day.link} onClick ={(e) =>{
+                    setActive(index)
+                          }} 
+                      >
+                        <a id={day.id} data-toggle="pill" role="tab" aria-controls={day.link}  aria-selected="true" className= {`nav-link ${index===active && "active"}`}>{day.date}</a></Link>)
+                    })}
                 </div>
               </div>
             </div>
@@ -141,23 +141,23 @@ function YogaSchedules() {
               <h5 id="week-details" className="font-body text-black-50 d-inline-block">Date</h5><span className="text-black-50"> (Monday - Sunday)</span>
               <div className="tab-content" id="v-pills-tabContent">
          
-          { scheduleTimes.map((scheduleTime , index)=>{
-            return (<div onClick ={(e) =>{
-              setActive(index)
-            }} 
-             className={`tab-pane schedule-wrap fade ${index===active && "show active"}`} id={scheduleTime.id} role="tabpanel" aria-labelledby={scheduleTime.label}>
-                <dl className="row no-gutters table mb-0">
-              
-              {
-                scheduleTimes.map((scheduleTime) =>{
-                  return <SchedulesDay scheduleTime = {scheduleTime} key={scheduleTime.id} />
-                })
-              }
-             
-            </dl>
-               </div>)
-              
-          })}
+              { scheduleTimes.map((scheduleTime , index)=>{
+                return ( <div key={index} onClick ={(e) =>{
+                  setActive(index)
+                }} 
+                className={`tab-pane schedule-wrap fade ${index===active && "show active"}`} id={scheduleTime.id} role="tabpanel" aria-labelledby={scheduleTime.label}>
+                    <dl className="row no-gutters table mb-0">
+                  
+                  {
+                    scheduleTimes.map((scheduleTime) =>{
+                      return <SchedulesDay scheduleTime = {scheduleTime} key={scheduleTime.id} />
+                    })
+                  }
+                
+                </dl>
+                  </div>)
+                  
+              })}
 
       
               </div>

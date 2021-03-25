@@ -7,6 +7,7 @@ const Layout = ({ children }) => {
       <Head>
         <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
         <meta name="author" content="SemiColonWeb" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           href="https://fonts.googleapis.com/css?family=Sansita:400,700|Roboto:400,500&display=swap"
           rel="stylesheet"
@@ -31,7 +32,6 @@ const Layout = ({ children }) => {
         <link rel="stylesheet" href="/css/animate.css" type="text/css" />
         <link rel="stylesheet" href="/css/magnific-popup.css" type="text/css" />
         <link rel="stylesheet" href="/css/custom.css" type="text/css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <script src="/js/jquery.js"></script>
         <script src="/js/plugins.min.js"></script>
         <script src="/js/components/moment.js"></script>

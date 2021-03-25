@@ -3,7 +3,7 @@
 function TeacherSlider() {
     return (
         <>
-                    <div id="oc-teachers" className="owl-carousel owl-carousel-full image-carousel carousel-widget customjs">
+            <div id="oc-teachers" className="owl-carousel owl-carousel-full image-carousel carousel-widget customjs">
             <div className="oc-item">
                 <div className="jumbotron m-0 dark p-5 d-flex justify-content-center align-items-md-end flex-column" style={{background: 'linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0, 0.8)), url("demos/yoga/images/teacher/1.jpg") no-repeat center center / cover'}}>
                 <div className="jumbotron-text mt-0 mt-md-auto row align-items-center">
@@ -158,4 +158,4 @@ function TeacherSlider() {
     )
 }
 
-export default TeacherSlider
+export default TeacherSlider;

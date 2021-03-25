@@ -97,4 +97,4 @@ function Gallerys() {
     )
 }
 
-export default Gallerys
+export default Gallerys;
