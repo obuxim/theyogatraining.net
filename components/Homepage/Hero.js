@@ -1,8 +1,8 @@
-import Slider from './Slider'
+import Sliderr from './Slider'
 const Hero = () => {
     return (
       <>
-        <Slider />
+        <Sliderr />
       </>
     )
 }
