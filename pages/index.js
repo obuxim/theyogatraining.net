@@ -1,5 +1,5 @@
 import Head from 'next/head'
-// import Hero from '../components/Homepage/Hero'
+import Hero from '../components/Homepage/Hero'
 import About from '../components/Homepage/About'
 import Cards from '../components/Homepage/Cards'
 import Teachers from '../components/Homepage/Teachers'
@@ -12,7 +12,7 @@ import Footer from '../components/Homepage/Footer'
 export default function Home() {
   return (
       <div>
-        {/* <Hero/> */}
+        <Hero/>
         <About/>
         <Cards/>
         <Teachers />

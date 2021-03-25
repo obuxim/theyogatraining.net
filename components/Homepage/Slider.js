@@ -2,7 +2,7 @@ import { Slider as Sliderr } from "react-slick";
 
 function Slider() {
   return (
-    <Sliderr>
+
       <section
         id="slider"
         className="slider-element swiper_wrapper min-vh-100"
@@ -53,7 +53,7 @@ function Slider() {
                   className="swiper-slide hero-diagonal dark bg-color"
                   style={{
                     background:
-                      'linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0, 0.1)), url("demos/yoga/images/slider/hero-2.jpg") no-repeat bottom right / auto 100%',
+                      'linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0, 0.1)), url("../../demos/yoga/images/slider/hero-2.jpg") no-repeat bottom right / auto 100%',
                   }}
                 >
                   <div className="container" style={{ zIndex: 2 }}>
@@ -100,7 +100,7 @@ function Slider() {
           </div>
         </div>
       </section>
-    </Sliderr>
+
   );
 }
 
